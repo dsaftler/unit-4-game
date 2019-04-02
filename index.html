@@ -11,29 +11,34 @@
   <title>Puzzle Crystal matching</title>
 </head>
 <body>
-<h1>Crystal Math-Magic!</h1>
-<div class="instructions">
-<p>You will be given a random number at the start of the game.</p>
-<p>There are four crysals below.  By clicking on a crystal, you will add a specific amount of points to your total score, but the <strong><em>value</em></strong> of each crystal is hidden from you until you click on it.</p>
-<p>You win the game by matching your total score to the random number. Don't go over it!</p>
-<p>Each time the game starts, the values of each crystal - and the random number - will change.</p>
-</div>
-<div class="scoring-area">
-  <div class="half first" id="randomTarget">The number to match: 0</div>
-  <div class="half second" id="currentTotal">Your total so far: 0</div>
-</div>
-<div class="crystal-set">
-  <div class="crystal clearfix" id="crystal_1"><img src="assets/images/crystal_1.jpg"></div>
-  <div class="crystal clearfix" id="crystal_2"><img src="assets/images/crystal_2.jpg"></div>
-  <div class="crystal clearfix" id="crystal_3"><img src="assets/images/crystal_3.jpg"></div>
-  <div class="crystal clearfix" id="crystal_4"><img src="assets/images/crystal_4.jpg"></div>
-</div>
-<div class="scoring-area">
-  <div class="half first" id="Wins">Wins: 0</div>
-  <div class="half second" id="Losses">Losses: 0</div>
-</div>
+<div class="container">
+  <h1>Crystal Math-Magic!</h1>
+  <div class="instructions">
+  <p>You will be given a random number to match at the start of the game.</p>
+  <p>Starting from 0, you can win the game by adding just enough points to match the random number.</p>
+  <p>There are four crysals below.  By clicking on a crystal, you will add a specific number of points to your total, but the <strong><em>value</em></strong> of each crystal is hidden from you until you click on it.  You'll have to figure those out to match without going over. </p>
 
+  <p>Each time the game starts, the values of the random number and each crystal will change.</p>
+  </div>
+
+  <div class="scoring-area">
+    <div class="half first bordergreen" id="randomTarget">The number to match: 0</div>
+    <div class="half second bordergreen" id="currentTotal">Your total so far: 0</div>
+  </div>
+  <div class="crystal-set">
+    <div class="crystal bordergreen clearfix" id="crystal_0"><img src="assets/images/crystal_0.jpg"></div>
+    <div class="crystal bordergreen clearfix" id="crystal_1"><img src="assets/images/crystal_1.jpg"></div>
+    <div class="crystal bordergreen clearfix" id="crystal_2"><img src="assets/images/crystal_2.jpg"></div>
+    <div class="crystal bordergreen clearfix" id="crystal_3"><img src="assets/images/crystal_3.jpg"></div>
+  </div>
+  <div class="scoring-area">
+    <div class="half first bordergreen" id="Wins">Wins: 0</div>
+    <div class="half second bordergreen" id="Losses">Losses: 0</div>
+  </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+ 
 
 </body>
 </html>
