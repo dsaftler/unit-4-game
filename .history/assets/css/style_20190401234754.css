@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+height: 100%;
+background-image: url("../images/congruent_pentagon.png");
+background-repeat: repeat;
+width: 70%;
+font-family: 'BioRhyme',serif;
+font-size: 18px;
+}
+
+h1 {margin-top: 0px;}
+p {
+  margin-top: 0em;
+  margin-bottom: 2em;
+}
+.container{
+  background-color: whitesmoke;
+  width: 825px;
+  padding: 40px;
+  margin: auto; 
+  margin-top: 60px;
+  align-content: center;
+ 
+
+
+}
+/* .instructions{
+  width: 765px;
+} */
+.scoring-area{
+  clear:both;
+  width:760px;
+  height: 35px;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+.half{
+  float: left;
+  width: 367px;
+  background-color: rgb(182,211,192);
+  font-size: 22px;
+  padding-left: 5px;
+
+}
+.bordergreen {
+  border: 5px solid rgb(50, 86, 63)
+}
+.first {margin-right: 4px;}
+.second {margin-left: 6px;}
+/* #randomTarget {color: teal;}
+#currentTotal {color: teal;} */
+.crystal-set{
+  /* background-color: #ffffff; */
+  height: 230px;
+  width: 760px;
+  /* padding: 5px; */
+  /* padding-left:8px; */
+}
+.crystal{
+  display: block;
+  align-content: center;
+  float: left;
+  height: 200px;
+  width: 180px;
+  margin-right: 8px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+.clearfix {
+  overflow: hidden;
+}
