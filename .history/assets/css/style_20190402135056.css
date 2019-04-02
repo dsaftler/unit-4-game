@@ -65,7 +65,8 @@ p {
   /* float: left; */
   height: 180px;
   width: 180px;
-  margin-right: 3px;
+  /* margin-right: 8px;
+  margin-right: 8px; */
   margin-top: 5px;
 }
 .clearfix {

@@ -39,7 +39,7 @@ p {
 }
 .half{
   float: left;
-  width: 367px;
+  width: 265px;
   background-color: rgb(182,211,192);
   font-size: 22px;
   padding-left: 5px;
@@ -60,12 +60,13 @@ p {
   /* padding-left:8px; */
 }
 .crystal{
-  display: inline-block;
+  display: block;
   align-content: center;
-  /* float: left; */
+  float: left;
   height: 180px;
   width: 180px;
-  margin-right: 3px;
+  margin-right: 8px;
+  margin-right: 8px;
   margin-top: 5px;
 }
 .clearfix {

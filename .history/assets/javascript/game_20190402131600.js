@@ -2,7 +2,9 @@
  var crystalPts = [],
    randomNumber = 0, totalPts = 0
  var wins = 0, losses = 0
-  var maxRndCrystal=12, maxRndRandom=120, minRndRandom=19;
+ var lblTotalPts ="Your total so far: ",
+      lblRandomNum = "The number to match: ",lblWins="Wins: ",lblLosses="Losses: "
+ var maxRndCrystal=12, maxRndRandom=120, minRndRandom=19;
  
 
 $(document).ready(function() {
@@ -22,26 +24,27 @@ $(document).ready(function() {
       $(itarget).prop('title',crystalPts[i])
       //console.log(i + ' ' + crystalPts +' '+crystalPts[i])
       totalPts = totalPts + iVal;
-      //console.log(totalPts)
+      console.log(totalPts)
     }
   }
 
   // show total points
-  $('#currentTotal').text(totalPts)
+  $('#currentTotal').text(lblTotalPts+totalPts)
   //$('#currentTotal').append(totalPts)
   if (totalPts>=randomNumber){
     if (totalPts===randomNumber){
       // alert("you win");
         wins++;
-        //console.log(lblWins + wins);
-        // show wins
-        $('#wins').text(wins);
+        //target.innerHTML = target.innerHTML + "      " + thisValue
+        console.log(lblWins + wins);
+        $('#wins').text(lblWins+wins);
        // Playsound("sound1");
+        // show wins
     }
     if (totalPts>randomNumber){
       // alert("you lose");
       losses++;
-        $('#losses').text(losses)
+        $('#losses').text(lblLosses+losses)
       //show losses
     }
     initGame();
@@ -64,11 +67,12 @@ function initGame(){
   $(".crystal").prop('title', '?')
   totalPts=0;
   //  show points, show random
-  $('#currentTotal').text(totalPts);
-  // randomNumber assign random number 19-120
+  $('#currentTotal').text(lblTotalPts + totalPts);
+  // randomNumber = Math.floor(Math.random() * (maxRndRandom - minRndRandom + 1)) + minRndRandom;
   randomNumber = getRandomRng(maxRndRandom,minRndRandom);
   //console.log(randomNumber); 
-  $('#randomTarget').text(randomNumber);
+  // randomNumber assign random number 19-120
+  // $('#randomTarget').text(randomNumber);
 }
 function getRandomPts(max) {
   return Math.floor(Math.random() * Math.floor(max))+1;

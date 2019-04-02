@@ -60,12 +60,13 @@ p {
   /* padding-left:8px; */
 }
 .crystal{
-  display: inline-block;
+  display: block;
   align-content: center;
   /* float: left; */
   height: 180px;
   width: 180px;
-  margin-right: 3px;
+  margin-right: 8px;
+  margin-right: 8px;
   margin-top: 5px;
 }
 .clearfix {

@@ -33,10 +33,11 @@ $(document).ready(function() {
     if (totalPts===randomNumber){
       // alert("you win");
         wins++;
-        //console.log(lblWins + wins);
-        // show wins
+        //target.innerHTML = target.innerHTML + "      " + thisValue
+        console.log(lblWins + wins);
         $('#wins').text(wins);
        // Playsound("sound1");
+        // show wins
     }
     if (totalPts>randomNumber){
       // alert("you lose");
@@ -64,10 +65,11 @@ function initGame(){
   $(".crystal").prop('title', '?')
   totalPts=0;
   //  show points, show random
-  $('#currentTotal').text(totalPts);
-  // randomNumber assign random number 19-120
+  $('#currentTotal').text(lblTotalPts + totalPts);
+  // randomNumber = Math.floor(Math.random() * (maxRndRandom - minRndRandom + 1)) + minRndRandom;
   randomNumber = getRandomRng(maxRndRandom,minRndRandom);
   //console.log(randomNumber); 
+  // randomNumber assign random number 19-120
   $('#randomTarget').text(randomNumber);
 }
 function getRandomPts(max) {
