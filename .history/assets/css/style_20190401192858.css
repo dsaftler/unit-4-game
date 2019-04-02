@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-image: url("assets/images/congruent_pentagon.png");
+width: 70%;
+font-family: 'BioRhyme',serif;
+font-size: 18px;
+
+}
+.container{
+  background-color: "green"
+
+}
+.instructions{
+  width: 765px;
+}
+.showRandomTarget { font-size: 22px;}
+#randomTarge {font-color: teal;}
+.crystal-set{
+  background-color: #ffffff;
+  height: 230px;
+  width: 765px;
+  border:5px solid teal;
+  padding: 5px;
+  padding-left:8px;
+}
+.crystal{
+  display: block;
+  align-content: center;
+  float: left;
+  height: 200px;
+  width: 180px;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  border: teal 5px solid;
+ 
+
+}
+.clearfix {
+  overflow: hidden;
+}

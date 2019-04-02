@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+background-image: url("assets\images\congruent_pentagon.png")
+}
+.container{
+  background-color: "green"
+
+}
+.crystal-set{
+  background-color: "white";
+  float: left;
+  height: 300px;
+
+}
+.crystal{
+  height: 255px;
+  width: 225px;
+  border: teal, 5px, solid;
+
+}
