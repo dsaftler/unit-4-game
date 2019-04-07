@@ -5,72 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
   <title>Crystal Math Puzzle</title>
 </head>
 <body>
 <div class="container">
-
   <h1>Math-magical Crystals!</h1>
-  <div class="row">
-  <div class="col">
-  <!-- <div class="instructions"></div> -->
+  <div class="instructions">
   <p>You will be given a random number to match at the start of the game.</p>
   <p>Starting from 0, you can win the game by adding just enough points to match the random number.</p>
   <p>There are four crysals below.  By clicking on a crystal, you will add a specific number of points to your total, but the <strong><em>value</em></strong> of each crystal is hidden from you until you click on it.  Then you'll have to figure out how to use them to add up to your match without going over. </p>
 
   <p>On each new game, the values of the random number and each crystal will change.</p>
   </div>
-  </div>
-  <div class="row">
-  <div class="col-sm-12">
+
   <div class="scoring-area">
     <!-- <div class="half first bordergreen" id="randomTarget">The number to match: </div> -->
     <div class="half first bordergreen">The number to match: <span id="randomTarget">0</span> </div>
     <div class="half second bordergreen">Your total so far: <span id="currentTotal"></span></div>
   </div>
-  </div>
-  </div>
   <div class="crystal-set">
-    <div class="row">
-     <div class="col-sm-12">
     <div class="crystal bordergreen clearfix" id="crystal_0"><img src="assets/images/crystal_0.jpg"></div>
     <div class="crystal bordergreen clearfix" id="crystal_1"><img src="assets/images/crystal_1.jpg"></div>
     <div class="crystal bordergreen clearfix" id="crystal_2"><img src="assets/images/crystal_2.jpg"></div>
     <div class="crystal bordergreen clearfix" id="crystal_3"><img src="assets/images/crystal_3.jpg"></div>
   </div>
-    </div>
-    </div>
   <div class="scoring-area">
-      <div class="row">
-        <div class="col-sm-12">
-    <div class="half first bordergreen winscnt">Wins: <span id="wins"></span></div>
-    <div class="half second bordergreen lossescnt">Losses: <span id="losses"></span></div>
-     </div>
-     </div>
+    <div class="half first bordergreen">Wins: <span id="wins"></span></div>
+    <div class="half second bordergreen">Losses: <span id="losses"></span></div>
   </div>
-  <!-- <div>   // does not work...
+  <div>
+    
       <audio id="audio" muted autoplay>
       <button id="unmuteButton"></button>
-  </div>   -->
+      
+       <script>
+          unmuteButton.addEventListener('click', function () {
+          audio.muted = false;
+          });
+       </script>
+    
+  </div>  
 
 
 </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-
+   <!-- <embed src="assets/javascript/success.wav" autostart="false" width="0" height="0" id="sound1"  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
-  <!-- <script>
-    unmuteButton.addEventListener('click', function () {
-    audio.muted = false;
-          });
-  </script> -->
+
 
 </body>
 </html>

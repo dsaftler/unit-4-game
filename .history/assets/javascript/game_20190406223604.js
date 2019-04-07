@@ -47,11 +47,11 @@ $(document).ready(function() {
     }
     if (totalPts>randomNumber){
       // alert("you lose");
-      $(".lossescnt").addClass("liteuploss");
+      $(".lossescnt").addClass("liteup");
       losses++;
         $('#losses').text(losses)
       var clrLiteUp = setTimeout(function () {  
-        $(".lossescnt").removeClass("liteuploss");
+        $(".lossescnt").removeClass("liteup");
       }, 2000);
 
         //audioLose.play();

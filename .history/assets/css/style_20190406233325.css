@@ -20,10 +20,9 @@ p {
 }
 .container{
   background-color: whitesmoke;
- border-color: rgb(182, 211, 192);
- border-width: 8px;
+ border: 12px, rgb(182, 211, 192);
  border-style: outset;
- padding: 40px;
+  padding: 40px;
   /*padding-left: 45px; */
   margin: auto; 
   margin-top: 60px;
@@ -55,10 +54,6 @@ p {
 }
 .liteup {
   border: 6px solid rgb(106, 243, 14);
-  background-color: white;
-}
-.liteuploss {
-  border: 6px solid rgb(243, 14, 14);
   background-color: white;
 }
 .first {margin-right: 4px; float: left;}

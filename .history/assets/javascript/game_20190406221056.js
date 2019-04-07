@@ -37,23 +37,14 @@ $(document).ready(function() {
         wins++;
         //console.log(lblWins + wins);
         // show wins
-      $(".winscnt").addClass("liteup");
         $('#wins').text(wins);
-        var clrLiteUp = setTimeout(function () {
-          $(".winscnt").removeClass("liteup");
-      }, 2000);
           //audioWin.play();
        // Playsound("sound1");
     }
     if (totalPts>randomNumber){
       // alert("you lose");
-      $(".lossescnt").addClass("liteuploss");
       losses++;
         $('#losses').text(losses)
-      var clrLiteUp = setTimeout(function () {  
-        $(".lossescnt").removeClass("liteuploss");
-      }, 2000);
-
         //audioLose.play();
       //show losses
     }

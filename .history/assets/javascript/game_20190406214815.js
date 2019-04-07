@@ -3,11 +3,11 @@
    randomNumber = 0, totalPts = 0
  var wins = 0, losses = 0
  var maxRndCrystal=12, maxRndRandom=120, minRndRandom=19;
- //var audioWin = new Audio("tada.wav");
- //var audioLose = new Audio("bong.wav");
+ var audiowin = new Audio("tada.wav");
+ var audiolose = new Audio("bong.wav");
 
 $(document).ready(function() {
- 
+
   initGame()
   $(".crystal").click(function(){
   var $target = $(this).attr("id")
@@ -37,24 +37,15 @@ $(document).ready(function() {
         wins++;
         //console.log(lblWins + wins);
         // show wins
-      $(".winscnt").addClass("liteup");
         $('#wins').text(wins);
-        var clrLiteUp = setTimeout(function () {
-          $(".winscnt").removeClass("liteup");
-      }, 2000);
-          //audioWin.play();
+          audiowin.play();
        // Playsound("sound1");
     }
     if (totalPts>randomNumber){
       // alert("you lose");
-      $(".lossescnt").addClass("liteuploss");
       losses++;
         $('#losses').text(losses)
-      var clrLiteUp = setTimeout(function () {  
-        $(".lossescnt").removeClass("liteuploss");
-      }, 2000);
-
-        //audioLose.play();
+        audiolose.play();
       //show losses
     }
     initGame();
